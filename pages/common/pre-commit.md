@@ -1,7 +1,7 @@
 # pre-commit
 
 > Create Git hooks that get run before a commit.
-> More information: <https://pre-commit.com>.
+> More information: <https://pre-commit.com/#command-line-interface>.
 
 - Install pre-commit into your Git hooks:
 
@@ -19,6 +19,6 @@
 
 `pre-commit clean`
 
-- Update pre-commit config file to the latest repos' versions:
+- Update pre-commit configuration file to the latest repos' versions:
 
 `pre-commit autoupdate`

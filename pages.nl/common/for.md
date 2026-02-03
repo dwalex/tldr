@@ -13,16 +13,16 @@
 
 - Itereer over een gegeven reeks nummers:
 
-`for {{variabele}} in {{{van}}..{{tot}}..{{stap}}}; do {{echo "Loop wordt uitgevoerd"}}; done`
+`for {{variabele}} in {{{van..tot..stap}}}; do {{echo "Loop wordt uitgevoerd"}}; done`
 
 - Itereer over een gegeven lijst van bestanden:
 
 `for {{variabele}} in {{pad/naar/bestand1 pad/naar/bestand2 ...}}; do {{echo "Loop wordt uitgevoerd"}}; done`
 
-- Itereer over een gegeven lijst van directories:
+- Itereer over een gegeven lijst van mappen:
 
-`for {{variabele}} in {{pad/naar/directory1/ pad/naar/directory2/ ...}}; do {{echo "Loop wordt uitgevoerd"}}; done`
+`for {{variabele}} in {{pad/naar/map1/ pad/naar/map2/ ...}}; do {{echo "Loop wordt uitgevoerd"}}; done`
 
-- Voer een gegeven commando uit in elke directory:
+- Voer een gegeven commando uit in elke map:
 
 `for {{variabele}} in */; do (cd "${{variabele}}" || continue; {{echo "Loop wordt uitgevoerd"}}) done`

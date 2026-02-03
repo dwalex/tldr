@@ -1,6 +1,7 @@
 # dmesg
 
 > Escreve as mensagens do kernel na terminal.
+> Veja também: `journalctl`.
 > Mais informações: <https://manned.org/dmesg>.
 
 - Exibe as mensagens do kernel:
@@ -9,15 +10,15 @@
 
 - Exibe as mensagens de erro do kernel:
 
-`sudo dmesg --level err`
+`sudo dmesg {{[-l|--level]}} err`
 
 - Exibe as mensagens do kernel e manter o terminal esperando por novas menagens, semelhante ao `tail -f` (disponível nas versões 3.5.0 e superiores do kernel):
 
-`sudo dmesg -w`
+`sudo dmesg {{[-w|--follow]}}`
 
 - Exibe a quantidade de memória física disponível no sistema:
 
-`sudo dmesg | grep -i memory`
+`sudo dmesg | grep {{[-i|--ignore-case]}} memory`
 
 - Exibe as mensagens do kernel divididas em páginas:
 
@@ -25,12 +26,12 @@
 
 - Exibe as menagens do kernel com data/hora (disponível nas versões 3.5.0 e superiores do kernel):
 
-`sudo dmesg -T`
+`sudo dmesg {{[-T|--ctime]}}`
 
 - Exibe as mensagens do kernel em um formato de fácil leitura (disponível nas versões 3.5.0 e superiores do kernel):
 
-`sudo dmesg -H`
+`sudo dmesg {{[-H|--human]}}`
 
 - Exibe as mensagens do kernel utilizando cores (disponível nas versões 3.5.0 e superiores do kernel):
 
-`sudo dmesg -L`
+`sudo dmesg {{[-L|--color]}}`

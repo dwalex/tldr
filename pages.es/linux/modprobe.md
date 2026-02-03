@@ -1,7 +1,7 @@
 # modprobe
 
 > Añade o elimina módulos del núcleo Linux.
-> Vea también: `kmod`, para otros comandos de gestión de módulos.
+> Vea también: `kmod`.
 > Más información: <https://manned.org/modprobe>.
 
 - Finge cargar un módulo en el kernel, pero no lo hace realmente:
@@ -18,7 +18,7 @@
 
 - Elimina un módulo y los que dependen de él desde el núcleo:
 
-`sudo modprobe --remove-dependencies {{nombre_del_módulo}}`
+`sudo modprobe {{[-r|--remove]}} --remove-holders {{nombre_del_módulo}}`
 
 - Muestra las dependencias de un módulo del kernel:
 

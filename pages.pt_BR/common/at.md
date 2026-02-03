@@ -8,7 +8,7 @@
 
 `systemctl start atd`
 
-- Cria comandos interativamente e executa-os em 5 minutos (pressione `<Ctrl> + D` quando acabar):
+- Cria comandos interativamente e executa-os em 5 minutos (pressione `<Ctrl d>` quando acabar):
 
 `at now + 5 minutes`
 
@@ -16,7 +16,7 @@
 
 `at {{hh:mm}}`
 
-- Executa um comando da `stdin` (standard input) às 10:00 da manhã de hoje:
+- Executa um comando da `stdin` às 10:00 da manhã de hoje:
 
 `echo "{{comando}}" | at 1000`
 

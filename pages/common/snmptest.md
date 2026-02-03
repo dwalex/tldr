@@ -5,4 +5,8 @@
 
 - Start the prompt:
 
-`snmpget -v {{version}} -c {{community}} {{ip}}`
+`snmptest -v {{version}} -c {{community}} {{ip_address}}`
+
+- Display help:
+
+`snmptest {{[-h|--help]}}`

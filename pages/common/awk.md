@@ -1,6 +1,8 @@
 # awk
 
 > A versatile programming language for working on files.
+> Note: Different implementations of AWK often make this a symlink of their binary.
+> See also: `gawk`.
 > More information: <https://github.com/onetrueawk/awk>.
 
 - Print the fifth column (a.k.a. field) in a space-separated file:
@@ -29,7 +31,7 @@
 
 - Print all the lines which the 10th column value is between a min and a max:
 
-`awk '($10 >= {{min_value}} && $10 <= {{max_value}})'`
+`awk '($10 >= {{min_value}} && $10 <= {{max_value}})' {{path/to/file}}`
 
 - Print table of users with UID >=1000 with header and formatted output, using colon as separator (`%-20s` mean: 20 left-align string characters, `%6s` means: 6 right-align string characters):
 

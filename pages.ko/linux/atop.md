@@ -1,6 +1,7 @@
 # atop
 
 > Linux 시스템 및 프로세스 모니터.
+> 같이 보기: `htop`, `top`, `btop`, `btm`, `glances`.
 > 더 많은 정보: <https://manned.org/atop>.
 
 - 시작:
@@ -29,4 +30,4 @@
 
 - 인터랙티브 명령에 대한 도움말 표시:
 
-`?`
+`<?>`

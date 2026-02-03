@@ -2,7 +2,7 @@
 
 > Sebuah shell script yang mengimplementasikan ACME client protocol (pembuat sertifikat HTTPS), alternatif dari `certbot`.
 > Lihat juga: `acme.sh dns`.
-> Informasi lebih lanjut: <https://github.com/acmesh-official/acme.sh>.
+> Informasi lebih lanjut: <https://github.com/acmesh-official/acme.sh#2-just-issue-a-cert>.
 
 - Terbitkan sertifikat baru dan pasang pada webroot secara langsung:
 
@@ -16,7 +16,7 @@
 
 `acme.sh --issue --alpn --domain {{example.com}}`
 
-- Terbitkan sertifikat dengan konfigurasi server Nginx untuk memasangnya:
+- Terbitkan sertifikat dengan konfigurasi server `nginx` untuk memasangnya:
 
 `acme.sh --issue --nginx --domain {{example.com}}`
 

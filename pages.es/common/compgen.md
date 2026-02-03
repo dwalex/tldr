@@ -1,24 +1,38 @@
 # compgen
 
-> Un comando integrado para autocompletar en Bash, que se invoca al presionar la tecla TAB dos veces.
+> Comando integrado de Bash para generar posibles coincidencias de finalización en Bash.
+> Se utiliza normalmente en funciones de finalización personalizadas.
+> Vea también: `complete`, `compopt`.
 > Más información: <https://www.gnu.org/software/bash/manual/bash.html#index-compgen>.
 
-- Lista todos los comandos que podría ejecutar:
+- Enumera todos los comandos integrados, alias, funciones y ejecutables del intérprete de comandos que se pueden ejecutar:
 
 `compgen -c`
 
-- Lista todos los alias:
+- Enumera todos los comandos que puede ejecutar que comienzan con una cadena específica y guarda los resultados en `$COMPREPLY`:
+
+`compgen -V COMPREPLY -c {{str}}`
+
+- Compara con una lista de palabras:
+
+`compgen -W "{{apple orange banana}}" {{a}}`
+
+- Enumera todos los alias:
 
 `compgen -a`
 
-- Lista todas las funciones que podría ejecutar:
+- Enumera todas las funciones que se pueden ejecutar:
 
 `compgen -A function`
 
-- Muestra palabras reservadas de la interfaz de comandos (shell):
+- Muestra las palabras clave reservadas del shell:
 
 `compgen -k`
 
-- Muestra todos los comandos/alias disponibles comenzando con 'ls':
+- Vea todos los comandos/alias disponibles que comienzan por `ls`:
 
 `compgen -ac {{ls}}`
+
+- Enumera todos los usuarios del sistema:
+
+`compgen -u`

@@ -1,7 +1,7 @@
 # byobu
 
 > Window manager and terminal multiplexer.
-> See also: `tmux` and `screen`.
+> See also: `tmux`, `screen`.
 > More information: <https://www.byobu.org/documentation>.
 
 - Start a new session:
@@ -23,3 +23,11 @@
 - Disable automatic startup after login into text console:
 
 `byobu-disable`
+
+- Detach from `byobu`:
+
+`<F6>`
+
+- Kill a window:
+
+`<Ctrl a><k>`

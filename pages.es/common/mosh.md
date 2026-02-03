@@ -2,7 +2,7 @@
 
 > Mobile Shell (`mosh`) es un reemplazo robusto y receptivo para SSH.
 > `mosh` persiste las conexiones con servidores remotos mientras deambula en las redes.
-> Más información: <https://mosh.org>.
+> Más información: <https://manned.org/mosh>.
 
 - Conecta a un servidor remoto:
 
@@ -10,7 +10,7 @@
 
 - Conecta a un servidor remoto con una identidad específica (clave privada):
 
-`mosh --ssh="ssh -i {{ruta/a/archivo_de_clave}}" {{usuario}}@{{equipo_remoto}}`
+`mosh --ssh="ssh -i {{ruta/al/archivo_de_clave}}" {{usuario}}@{{equipo_remoto}}`
 
 - Conecta a un servidor remoto usando un puerto específico:
 

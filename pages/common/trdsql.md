@@ -5,15 +5,15 @@
 
 - Convert object data from multiple JSON files to a CSV file with header (`-oh`) and double quote:
 
-`trdsql -ocsv -oh "SELECT * FROM {{path/to/file/*.json}}" | sed 's/\([^,]*\)/"&"/g' > {{path/to/file.csv}}`
+`trdsql -ocsv -oh "SELECT * FROM {{path/to/directory/*.json}}" | sed 's/\([^,]*\)/"&"/g' > {{path/to/file.csv}}`
 
 - Interpret JSON list as a table and put objects inside as columns (path/to/file.json: `{"list":[{"age":"26","name":"Tanaka"}]}`):
 
-`trdsql "SELECT * FROM {{path/to/file.json}}::.list`
+`trdsql "SELECT * FROM {{path/to/file.json}}::.list"`
 
 - Manipulate complex SQL query with data from multiple CSV files with first line is header (`-ih`):
 
-`trdsql -icsv -ih "SELECT {{column1,column2}} FROM {{path/to/file*.csv}} WHERE column2 != '' ORDER BY column1 GROUP BY column1"`
+`trdsql -icsv -ih "SELECT {{column1,column2}} FROM {{path/to/file*.csv}} WHERE column2 != '' ORDER BY {{column1}} GROUP BY {{column1}}"`
 
 - Merge content of 2 CSV files to one CSV file:
 

@@ -1,7 +1,8 @@
 # bluetoothctl
 
 > 블루투스 장치를 관리합니다.
-> 더 많은 정보: <https://bitbucket.org/serkanp/bluetoothctl>.
+> 같이 보기: `bluetui`.
+> 더 많은 정보: <https://manned.org/bluetoothctl>.
 
 - `bluetoothctl` 셸에 진입:
 

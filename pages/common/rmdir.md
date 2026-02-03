@@ -10,4 +10,8 @@
 
 - Remove specific nested directories recursively:
 
-`rmdir -p {{path/to/directory1 path/to/directory2 ...}}`
+`rmdir {{[-p|--parents]}} {{path/to/directory1 path/to/directory2 ...}}`
+
+- Clean a directory of empty directories:
+
+`rmdir *`

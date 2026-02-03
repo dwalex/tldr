@@ -1,6 +1,7 @@
 # chown
 
 > Muda o usuário e grupo donos de arquivos e diretórios.
+> Veja também: `chgrp`.
 > Mais informações: <https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html>.
 
 - Muda o usuário que é dono de um arquivo ou diretório:
@@ -17,11 +18,11 @@
 
 - Recursivamente muda o dono de um diretório e seu conteúdo:
 
-`chown -R {{usuario}} {{caminho/para/diretório}}`
+`chown {{[-R|--recursive]}} {{usuario}} {{caminho/para/diretório}}`
 
 - Muda o dono de um link simbólico:
 
-`chown -h {{usuario}} {{caminho/para/symlink}}`
+`chown {{[-h|--no-dereference]}} {{usuario}} {{caminho/para/symlink}}`
 
 - Muda o dono de um arquivo/diretório para ficar igual a um arquivo de referência:
 

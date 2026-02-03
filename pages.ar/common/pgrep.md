@@ -1,7 +1,7 @@
 # pgrep
 
 > البحث عن العمليات أو إرسال إشارات إليها باستخدام الاسم.
-> لمزيد من التفاصيل: <https://www.manned.org/pgrep>.
+> لمزيد من التفاصيل: <https://manned.org/pgrep>.
 
 - عرض معرّفات العمليات (PIDs) لأي عمليات جارية تتطابق مع اسم العملية:
 
@@ -9,8 +9,8 @@
 
 - البحث عن العمليات مع الخيارات المستخدمة في سطر الأوامر:
 
-`pgrep --full "{{process_name}} {{parameter}}"`
+`pgrep {{[-f|--full]}} "{{process_name}} {{parameter}}"`
 
 - البحث عن العمليات التي يتم تشغيلها بواسطة مستخدم معين:
 
-`pgrep --euid root {{process_name}}`
+`pgrep {{[-u|--euid]}} root {{process_name}}`

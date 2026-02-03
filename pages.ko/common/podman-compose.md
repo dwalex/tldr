@@ -9,7 +9,7 @@
 
 - 로컬 `docker-compose.yml`을 사용하여 백그라운드에서 모든 컨테이너 생성 및 시작:
 
-`podman-compose up -d`
+`podman-compose up {{[-d|--detach]}}`
 
 - 필요한 경우 빌드하여 모든 컨테이너 시작:
 
@@ -17,7 +17,7 @@
 
 - 다른 컴포즈 파일을 사용하여 모든 컨테이너 시작:
 
-`podman-compose {{-f|--file}} {{경로/대상/파일.yaml}} up`
+`podman-compose {{[-f|--file]}} {{경로/대상/파일.yaml}} up`
 
 - 실행 중인 모든 컨테이너 중지:
 
@@ -25,11 +25,11 @@
 
 - 모든 컨테이너, 네트워크 및 볼륨 제거:
 
-`podman-compose down --volumes`
+`podman-compose down {{[-v|--volumes]}}`
 
 - 컨테이너의 로그를 실시간으로 팔로우 (모든 컨테이너 이름 생략):
 
-`podman-compose logs --follow {{컨테이너_이름}}`
+`podman-compose logs {{[-f|--follow]}} {{컨테이너_이름}}`
 
 - 포트 매핑 없이 서비스에서 일회성 명령 실행:
 

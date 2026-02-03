@@ -1,7 +1,7 @@
 # whatweb
 
 > Next-generation web scanner.
-> More information: <https://morningstarsecurity.com/research/whatweb>.
+> More information: <https://github.com/urbanadventurer/WhatWeb#usage>.
 
 - Scan websites/targets for web technologies:
 
@@ -9,15 +9,15 @@
 
 - Read targets/websites from a file:
 
-`whatweb -i {{targets_file}}`
+`whatweb {{[-i|--input-file]}} {{targets_file}}`
 
 - Scan a website/target in verbose mode:
 
-`whatweb -v {{example.com}}`
+`whatweb {{[-v|--verbose]}} {{example.com}}`
 
 - Run an aggressive scan on a website:
 
-`whatweb -a 3 {{example.com}}`
+`whatweb {{[-a|--aggression]}} 3 {{example.com}}`
 
 - Scan a network and suppress errors:
 
@@ -25,8 +25,8 @@
 
 - List plugins:
 
-`whatweb -l`
+`whatweb {{[-l|--list-plugins]}}`
 
 - List plugin details:
 
-`whatweb -I {{plugin_name}}`
+`whatweb {{[-I|--info-plugins]}} {{plugin_name}}`

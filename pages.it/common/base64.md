@@ -1,6 +1,6 @@
 # base64
 
-> Codifica o decodifica file o standard input in Base64 su standard output.
+> Codifica o decodifica file o `stdin` in Base64 su `stdout`.
 > Maggiori informazioni: <https://manned.org/base64>.
 
 - Codifica un file:
@@ -9,11 +9,11 @@
 
 - Avvolgi l'output codificato a una larghezza specifica (`0` disabilita l'avvolgimento):
 
-`base64 {{-w|--wrap}} {{0|76|...}} {{percoso/del/file}}`
+`base64 {{[-w|--wrap]}} {{0|76|...}} {{percoso/del/file}}`
 
 - Decodifica un file:
 
-`base64 {{-d|--decode}} {{percoso/del/file}}`
+`base64 {{[-d|--decode]}} {{percoso/del/file}}`
 
 - Codifica da `stdin`:
 
@@ -21,4 +21,4 @@
 
 - Decodifica da `stdin`:
 
-`{{comando}} | base64 {{-d|--decode}}`
+`{{comando}} | base64 {{[-d|--decode]}}`

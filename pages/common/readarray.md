@@ -9,12 +9,24 @@
 
 - Read lines from a file and insert them in an array:
 
-`readarray {{array_name}} < {{path/to/file.txt}}`
+`readarray < {{path/to/file.txt}} {{array_name}}`
 
-- Remove trailing deliminators (newline by default):
+- Remove [t]railing deliminators (newline by default):
 
-`readarray -t {{array_name}} < {{path/to/file.txt}}`
+`readarray < {{path/to/file.txt}} -t {{array_name}}`
 
-- Copy at most the specified number of lines:
+- Copy at most `n` lines:
 
-`readarray -n {{N}} {{array_name}} < {{path/to/file.txt}}`
+`readarray < {{path/to/file.txt}} -n {{n}} {{array_name}}`
+
+- [s]kip the first `n` lines:
+
+`readarray < {{path/to/file.txt}} -s {{n}} {{array_name}}`
+
+- Define a custom [d]elimiter:
+
+`readarray < {{path/to/file.txt}} -d {{delimiter}} {{array_name}}`
+
+- Display help:
+
+`help mapfile`

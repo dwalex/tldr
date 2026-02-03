@@ -1,6 +1,7 @@
 # printf
 
 > Format and print text.
+> See also: `echo`.
 > More information: <https://www.gnu.org/software/coreutils/manual/html_node/printf-invocation.html>.
 
 - Print a text message:
@@ -23,6 +24,6 @@
 
 `printf -v {{myvar}} {{"This is %s = %d\n" "a year" 2016}}`
 
-- Print a hexadecimal, octal and scientific number:
+- Print a hexadecimal, octal, and scientific number:
 
-`printf "{{hex=%x octal=%o scientific=%e}}" 0x{{FF}} 0{{377}} {{100000}}`
+`printf "{{hex=%x octal=%o scientific=%e\n}}" 0x{{FF}} 0{{377}} {{100000}}`

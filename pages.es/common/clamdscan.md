@@ -7,7 +7,7 @@
 
 `clamdscan {{ruta/al/archivo_o_directorio}}`
 
-- Escanea desde 'stdin`:
+- Escanea desde `stdin`:
 
 `{{comando}} | clamdscan -`
 
@@ -21,7 +21,7 @@
 
 - Mueve los archivos infectados a un directorio específico:
 
-`clamdscan --move {{ruta/a/directorio_de_cuarentena}}`
+`clamdscan --move {{ruta/al/directorio_de_cuarentena}}`
 
 - Elimina los archivos infectados:
 

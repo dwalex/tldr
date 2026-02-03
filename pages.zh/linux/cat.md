@@ -1,7 +1,7 @@
 # cat
 
 > 打印和连接文件。
-> 更多信息：<https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html>.
+> 更多信息：<https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html>。
 
 - 将文件内容打印到 `stdout`：
 
@@ -21,8 +21,8 @@
 
 - 显示带有行号的所有行：
 
-`cat -n {{路径/到/文件}}`
+`cat {{[-n|--number]}} {{路径/到/文件}}`
 
 - 显示不可打印字符和空白字符（如果非 ASCII，则带有 `M-` 前缀）：
 
-`cat -v -t -e {{路径/到/文件}}`
+`cat {{[-vte|--show-nonprinting -t -e]}} {{路径/到/文件}}`

@@ -2,7 +2,7 @@
 
 > Manage packages across Yay, Flatpak, and Snap.
 > Supports searching, installing, removing, and upgrading packages.
-> More information: <https://github.com/zamhedonia/paxs>.
+> More information: <https://github.com/zamhedonia/paxs#usage>.
 
 - Search for a package:
 
@@ -10,20 +10,20 @@
 
 - Upgrade all packages:
 
-`paxs -u`
+`paxs {{[-u|--upgrade-all]}}`
 
 - Install a package (prompting for the source):
 
-`paxs -i {{package}}`
+`paxs {{[-i|--install]}} {{package}}`
 
 - Remove a package (prompting for the source):
 
-`paxs -r {{package}}`
+`paxs {{[-r|--remove]}} {{package}}`
 
 - Check for updates across all package managers:
 
-`paxs -c`
+`paxs {{[-c|--check-update]}}`
 
 - Display help:
 
-`paxs -h`
+`paxs {{[-h|--help]}}`

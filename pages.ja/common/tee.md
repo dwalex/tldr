@@ -9,7 +9,7 @@
 
 - 与えられたファイルに追記する。上書きはしない:
 
-`echo "example" | tee -a {{path/to/file}}`
+`echo "example" | tee {{[-a|--append]}} {{path/to/file}}`
 
 - ターミナルに `stdin` を表示し、さらに処理するために別のプログラムにパイプする:
 
@@ -17,4 +17,4 @@
 
 - "example"と言うディレクトリを作成し、"example"の文字バイト数を数え、"example"をターミナルに出力する:
 
-`echo "example" | tee >(xargs mkdir) >(wc -c)`
+`echo "example" | tee >(xargs mkdir) >(wc {{[-c|--bytes]}})`

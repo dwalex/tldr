@@ -9,7 +9,7 @@
 
 - Crea e inicia todos los contenedores en segundo plano utilizando un `docker-compose.yml` local:
 
-`podman-compose up -d`
+`podman-compose up {{[-d|--detach]}}`
 
 - Inicia todos los contenedores, construyendo si es necesario:
 
@@ -17,7 +17,7 @@
 
 - Inicia todos los contenedores usando un archivo de composición alterno:
 
-`podman-compose {{-f|--file}} {{ruta/al/archivo.yaml}} up`
+`podman-compose {{[-f|--file]}} {{ruta/al/archivo.yaml}} up`
 
 - Detiene todos los contenedores en funcionamiento:
 
@@ -25,11 +25,11 @@
 
 - Quita todos los contenedores, redes y volúmenes:
 
-`podman-compose down --volumes`
+`podman-compose down {{[-v|--volumes]}}`
 
 - Sigue los registros de un contenedor (omite todos los nombres de los contenedores):
 
-`podman-compose logs --follow {{nombre_del_contenedor}}`
+`podman-compose logs {{[-f|--follow]}} {{nombre_del_contenedor}}`
 
 - Ejecuta un comando de una sola vez en un servicio sin puertos mapeados:
 

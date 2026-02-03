@@ -1,6 +1,7 @@
 # dialog
 
 > Display dialog boxes on the terminal.
+> See also: `gum`, `whiptail`.
 > More information: <https://manned.org/dialog>.
 
 - Display a message:
@@ -14,3 +15,7 @@
 - Prompt the user for a yes/no question:
 
 `dialog --yesno "{{Continue?}}" {{7}} {{40}}`
+
+- Display help:
+
+`dialog`

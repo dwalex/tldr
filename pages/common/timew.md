@@ -1,7 +1,7 @@
 # timew
 
 > A time tracking tool used to measure the duration of activities.
-> More information: <https://timewarrior.net/docs>.
+> More information: <https://timewarrior.net/docs/>.
 
 - Start tracking an activity:
 
@@ -21,7 +21,7 @@
 
 - Track an activity in the past:
 
-`timew track {{start_time} - {{end_time}} {{activity_tag}}`
+`timew track {{start_time}} - {{end_time}} {{activity_tag}}`
 
 - View tracked items of the day:
 

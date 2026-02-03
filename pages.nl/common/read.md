@@ -17,9 +17,9 @@
 
 - Wijs meerdere waarden toe aan meerdere variabelen:
 
-`read {{_ variable1 _ variable2}} <<< "{{De achternaam is Bond}}"`
+`read <<< "{{De achternaam is Bond}}" {{_ variable1 _ variable2}}`
 
-- Laat backslash (\\) niet optreden als een escape-teken:
+- Laat backslash (`\`) niet optreden als een escape-teken:
 
 `read -r {{variable}}`
 
@@ -33,4 +33,4 @@
 
 - Lees `stdin` en voer een actie uit op elke regel:
 
-`while read line; do {{echo|ls|rm|...}} "$line"; done < {{/dev/stdin|pad/naar/bestand|...}}`
+`cat {{/dev/stdin|pad/naar/bestand|...}} | while read line; do {{echo|ls|rm|...}} "$line"; done`

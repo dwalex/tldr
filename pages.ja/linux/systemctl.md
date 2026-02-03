@@ -1,7 +1,7 @@
 # systemctl
 
 > systemd システムとサービスマネージャーを制御します。
-> もっと詳しく: <https://www.freedesktop.org/software/systemd/man/systemctl.html>。
+> もっと詳しく: <https://www.freedesktop.org/software/systemd/man/latest/systemctl.html>。
 
 - 実行中のサービスを全て表示する:
 
@@ -29,7 +29,7 @@
 
 - 全ての service/socket/automount ユニットを running/failed 状態でフィルタリングして一覧表示する:
 
-`systemctl list-units --type={{service|socket|automount}} --state={{failed|running}}`
+`systemctl list-units {{[-t|--type]}} {{service|socket|automount}} --state {{failed|running}}`
 
 - ユニットファイルの内容と絶対パスを表示する:
 

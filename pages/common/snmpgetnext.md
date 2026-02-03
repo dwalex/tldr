@@ -5,8 +5,12 @@
 
 - Request the next value from the SNMP agent:
 
-`snmpget -v {{version}} -c {{community}} {{ip}} {{oid}}`
+`snmpgetnext -v {{version}} -c {{community}} {{ip_address}} {{oid}}`
 
 - Display the full Object Identifier (OID) path:
 
-`snmpget -v {{version}} -c {{community}} -O f {{ip}} {{oid}}`
+`snmpgetnext -v {{version}} -c {{community}} -O f {{ip_address}} {{oid}}`
+
+- Display help:
+
+`snmpgetnext {{[-h|--help]}}`

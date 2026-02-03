@@ -1,7 +1,7 @@
 # quickemu
 
 > 고도로 최적화된 데스크탑 가상 머신을 빠르게 구축하고 관리합니다.
-> 같이 보기: VM 설정 준비를 위한 `quickget`.
+> 같이 보기: `quickget`.
 > 더 많은 정보: <https://github.com/quickemu-project/quickemu>.
 
 - 구성 파일에서 가상 머신 생성 및 실행:
@@ -12,7 +12,7 @@
 
 `quickemu --status-quo --vm {{경로/대상/파일.conf}}`
 
-- 전체 화면 모드로 가상 머신 시작 (<Ctrl> + <Alt> + f로 종료) 및 디스플레이 백엔드 선택 (기본값은 `sdl`):
+- 전체 화면 모드로 가상 머신 시작 (`<Ctrl Alt f>`로 종료) 및 디스플레이 백엔드 선택 (기본값은 `sdl`):
 
 `quickemu --fullscreen --display {{sdl|gtk|spice|spice-app|none}} --vm {{경로/대상/파일.conf}}`
 

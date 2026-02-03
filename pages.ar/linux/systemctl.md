@@ -1,7 +1,7 @@
 # systemctl
 
 > التحكم في مدير نظام systemd والخدمات.
-> لمزيد من التفاصيل: <https://www.freedesktop.org/software/systemd/man/systemctl.html>.
+> لمزيد من التفاصيل: <https://www.freedesktop.org/software/systemd/man/latest/systemctl.html>.
 
 - عرض جميع الخدمات قيد التشغيل:
 
@@ -29,7 +29,7 @@
 
 - عرض جميع وحدات الخدمة/المقبس/التركيب التلقائي مع التصفية حسب الحالة (قيد التشغيل/فاشلة):
 
-`systemctl list-units --type={{service|socket|automount}} --state={{failed|running}}`
+`systemctl list-units {{[-t|--type]}} {{service|socket|automount}} --state {{failed|running}}`
 
 - عرض محتويات ومسار ملف الوحدة:
 

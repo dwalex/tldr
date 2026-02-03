@@ -1,7 +1,7 @@
 # emacs
 
 > 확장 가능, 사용자 정의 가능, 자체 문서화가 되는 실시간 디스플레이 편집기.
-> 참고: `emacsclient`.
+> 같이 보기: `emacsclient`.
 > 더 많은 정보: <https://www.gnu.org/software/emacs>.
 
 - Emacs 시작 및 파일 열기:
@@ -18,7 +18,7 @@
 
 - 콘솔 모드에서 Emacs를 시작 (X 윈도우 없이):
 
-`emacs --no-window-system`
+`emacs {{[-nw|--no-window-system]}}`
 
 - 백그라운드에서 Emacs 서버를 시작 (`emacsclient`를 통해 액세스 가능):
 
@@ -30,8 +30,8 @@
 
 - Emacs에 파일을 저장:
 
-`<Ctrl> + X, <Ctrl> + S`
+`<Ctrl x><Ctrl s>`
 
 - Emacs를 종료:
 
-`<Ctrl> + X, <Ctrl> + C`
+`<Ctrl x><Ctrl c>`

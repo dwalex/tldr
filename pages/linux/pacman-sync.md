@@ -1,6 +1,6 @@
 # pacman --sync
 
-> Arch Linux package manager utility.
+> Synchronize packages from remote repositories.
 > See also: `pacman`.
 > More information: <https://manned.org/pacman.8>.
 
@@ -16,7 +16,7 @@
 
 `sudo pacman -Syu --noconfirm {{package}}`
 
-- [s]earch the package database for a regular expression or keyword:
+- [s]earch the package database for a `regex` or keyword:
 
 `pacman -Ss "{{search_pattern}}"`
 
@@ -28,7 +28,7 @@
 
 `sudo pacman -Syu --overwrite {{path/to/file}}`
 
-- Remove not installed packages and unused repositories from the cache (use the flags `Sc` to [c]lean all packages):
+- Remove not installed packages and unused repositories from the cache (use the flags `Scc` to [c]lean all packages):
 
 `sudo pacman -Sc`
 

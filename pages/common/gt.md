@@ -1,9 +1,9 @@
 # gt
 
 > Create and manage sequences of dependent code changes (stacks) for Git and GitHub.
-> More information: <https://graphite.dev/docs/get-started>.
+> More information: <https://graphite.com/docs/get-started>.
 
-- Initialise `gt` for the repository in the current directory:
+- Initialize `gt` for the repository in the current directory:
 
 `gt init`
 

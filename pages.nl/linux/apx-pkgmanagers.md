@@ -1,8 +1,8 @@
 # apx pkgmanagers
 
 > Beheer pakketmanagers in `apx`.
-> Let op: door gebruikers gecreëerde pakketbeheerconfiguraties worden opgeslagen in `~/.local/share/apx/pkgmanagers`.
-> Meer informatie: <https://github.com/Vanilla-OS/apx>.
+> Opmerking: door gebruikers gecreëerde pakketbeheerconfiguraties worden opgeslagen in `~/.local/share/apx/pkgmanagers`.
+> Meer informatie: <https://docs.vanillaos.org/docs/en/apx-manpage#pkgmanagers>.
 
 - Maak interactief een nieuwe configuratie voor een pakketbeheer:
 
@@ -18,4 +18,4 @@
 
 - Geef informatie weer over een specifieke pakketbeheer:
 
-`apx pkgmanagers show {{name}}`
+`apx pkgmanagers show {{naam}}`

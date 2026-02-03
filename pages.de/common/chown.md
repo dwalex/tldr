@@ -1,6 +1,7 @@
 # chown
 
 > Ändere den Besitzer und die Besitzergruppe von Dateien und Verzeichnissen.
+> Siehe auch: `chgrp`.
 > Weitere Informationen: <https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html>.
 
 - Ändere den Besitzer einer Datei/eines Verzeichnisses:
@@ -13,11 +14,11 @@
 
 - Ändere den Besitzer eines Verzeichnisses rekursiv:
 
-`chown -R {{benutzer}} {{pfad/zu/verzeichnis}}`
+`chown {{[-R|--recursive]}} {{benutzer}} {{pfad/zu/verzeichnis}}`
 
 - Ändere den Besitzer eines symbolischen Links:
 
-`chown -h {{benutzer}} {{pfad/zu/symlink}}`
+`chown {{[-h|--no-dereference]}} {{benutzer}} {{pfad/zu/symlink}}`
 
 - Ändere den Besitzer einer Datei/eines Verzeichnisses, damit sie/es mit einer Referenzdatei übereinstimmt:
 

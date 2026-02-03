@@ -7,14 +7,18 @@
 
 `logread`
 
-- Print a specified number of messages:
+- Print `n` messages:
 
-`logread -l {{N}}`
+`logread -l {{n}}`
 
-- Filter messages by (Keyword/Regular Expression):
+- Filter messages by (Keyword/`regex`):
 
 `logread -e {{pattern}}`
 
 - Print log messages as they happen:
 
 `logread -f`
+
+- Display help:
+
+`logread -h`

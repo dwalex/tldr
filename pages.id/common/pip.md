@@ -2,7 +2,7 @@
 
 > Pengelola paket Python.
 > Beberapa subperintah seperti `install` mempunyai dokumentasi terpisah.
-> Informasi lebih lanjut: <https://pip.pypa.io>.
+> Informasi lebih lanjut: <https://pip.pypa.io/en/stable/cli/pip/>.
 
 - Pasang suatu paket (lihat dokumentasi `pip install` untuk melihat contoh pemasangan tambahan):
 
@@ -14,7 +14,7 @@
 
 - Tingkatkan suatu paket ke versi terbaru:
 
-`pip install --upgrade {{nama_paket}}`
+`pip install {{[-U|--upgrade]}} {{nama_paket}}`
 
 - Copot pemasangan suatu paket:
 
@@ -30,4 +30,4 @@
 
 - Pasang kumpulan paket dari suatu berkas:
 
-`pip install --requirement {{requirements.txt}}`
+`pip install {{[-r|--requirement]}} {{requirements.txt}}`
